@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image lightbox</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Simple Lightbox</h1>
+			<div class="image-grid">
+				<img data-src="1.jpg" alt="" />
+				<img data-src="2.jpg" alt="" />
+				<img data-src="3.jpg" alt="" />
+				<img data-src="4.jpg" alt="" />
+				<img data-src="5.jpg" alt="" />
+				<img data-src="6.jpg" alt="" />
+				<img data-src="7.jpg" alt="" />
+				<img data-src="8.jpg" alt="" />
+				<img data-src="9.jpg" alt="" />
+				<img data-src="10.jpg" alt="" />
+			</div>
+		</div>
+
+		<!-- now creating a simple lightbox container -->
+		<div class="lightbox">
+			<div class="lightbox-items">
+				<div class="lightbox-close">&times;</div>
+				<div class="lightbox-image">
+					<img src="" alt="" />
+				</div>
+				<div class="img-num">
+					<p class="text">Image</p>
+					<span id="current">
+						<span class="img"></span>
+						<span>of</span>
+						<span class="total"></span>
+					</span>
+				</div>
+				<div class="prev" onclick="prev()">&#8249;</div>
+				<div class="next" onclick="next()">&#8250;</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
